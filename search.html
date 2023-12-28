@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Search Bar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .search-container {
+      position: relative;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: width 0.3s;
+    }
+
+    .search-input:focus {
+      width: 300px;
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Search...">
+  <button class="search-btn" onclick="search()">Search</button>
+</div>
+
+<script>
+  function search() {
+    // Perform search functionality here
+    alert("Performing search...");
+  }
+</script>
+
+</body>
+</html>
